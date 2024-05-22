@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角學院 Hex School</title>
+
+    <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <div class="topbar">
+        <ul>
+            <li>
+                <img src="images/facebookIcon.png" alt="">
+                <a href="#" class="fb">粉絲團</a>
+            </li>
+            <li>
+                <img src="images/twitterIcon.png" alt="">
+                <a href="#" class="twitter">追隨我們</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <h1><a href="#">六角學院 Hex School</a></h1>
+        <ul class="menu">
+            <li><a href="#">首頁</a></li>
+            <li>
+                <a href="#">產品介紹</a>
+                <ul>
+                    <li><a href="#">Html 5基礎教學</a></li>
+                    <li><a href="#">響應式網站設計</a></li>
+                    <li><a href="#">jQuery 實戰教學</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">聯絡我們</a>
+                <ul>
+                    <li><a href="#">線上表單</a></li>
+                    <li><a href="#">常見問題</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/header_background_edited.png" alt=""></div>
+            </div>
+            <h2>六角學院<br>
+                讓你奠定良好的前端基礎
+            </h2>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </div>
+    <ul class="course">
+        <li class="course-item">
+            <a href="https://www.w3.org/html/logo/img/html5-topper.png" data-lightbox="course" data-title="Html 5基礎教學"><img src="images/html.png"></a>
+            <h4>Html 5基礎教學</h4>
+            <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+        </li>
+        <li class="course-item">
+            <a href="https://www.w3schools.com/css/img_temp_band.jpg" data-lightbox="course" data-title="響應式網站設計"><img src="images/rwd.png"></a>
+            <h4>響應式網站設計</h4>
+            <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+        </li>
+        <li class="course-item">
+            <a href="https://brand.jquery.org/resources/jquery-mark-light.gif" data-lightbox="course" data-title="jQuery 實戰教學"><img src="images/jQuery.png"></a>
+            <h4>jQuery 實戰教學</h4>
+            <p>本課程有以下特色：<br>
+                ．瞭解變數的使用方法<br>
+                ．學習並操作DOM<br>
+                ．學習基本數學運算方法<br>
+                ．套件的操作及運用
+                </p>
+        </li>
+    </ul>
+    <div class="difference">
+        <h3>線上課程及實體課程的差異</h3>
+        <table>
+            <tr>
+                <td class="column1">項目</td>
+                <td class="column2">六角學院線上課程</td>
+                <td class="column2">一般線上課程</td>
+                <td class="column3">實體課程</td>
+            </tr>
+            <tr>
+                <th>費用</th>
+                <th class="better">較低</th>
+                <th class="better">較低</th>
+                <th>較高</th>
+            </tr>
+            <tr>
+                <th>學習效果</th>
+                <th>一般</th>
+                <th>較低</th>
+                <th class="better">很好</th>
+            </tr>
+            <tr>
+                <th>Code review</th>
+                <th class="better">有</th>
+                <th>無</th>
+                <th>不一定</th>
+            </tr>
+            <tr>
+                <th>課程更新速度</th>
+                <th class="better">普通</th>
+                <th class="better">普通</th>
+                <th>較慢</th>
+            </tr>
+            <tr>
+                <th>多次複習</th>
+                <th class="better">可</th>
+                <th class="better">可</th>
+                <th>不可</th>
+            </tr>
+            <tr>
+                <th>字幕</th>
+                <th class="better">有</th>
+                <th>不一定</th>
+                <th>板書</th>
+            </tr>
+        </table>
+    </div>
+    <div class="contact">
+        <h3>對我們課程有興趣嗎？<br>
+            歡迎留下您的資料</h3>
+        <form action="final.html" class="form">
+            <textarea class="note" name="note"></textarea>
+            <div class="contact_info">
+                <label for="name">姓名</label>
+                <input type="text" name="name" id="name" placeholder="六角講師">
+                <label for="tel">電話</label>
+                <input type="text" name="tel" id="tel" placeholder="0912345678">
+                <label for="email">信箱</label>
+                <input type="text" name="email" id="email" placeholder="hexschool@mail.com">
+                <input type="submit" name="submit" value="送出" class="submit">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <a href="#">Hex School</a>
+        </div>
+        <div class="contact_info">
+            <p>聯絡我們：<a href="#">hexschool@gmail.com</a><br>
+                電話：<a href="#">0999123456</a></p>
+        </div>
+    </div>
+    <div class="fixbtn">
+        <a href="#"><img src="images/Back-To-Top.png" alt=""></a>
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!--
+        lightbox.js
+        The MIT License (MIT)
+        Copyright (c) 2015 Lokesh Dhakar
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+    -->
+    <script src="js/final.js"></script>
+
+</body>
+</html>

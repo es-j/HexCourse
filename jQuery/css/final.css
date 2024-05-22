@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix{
+	clear: both;
+}
+
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+.topbar{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: end;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.topbar ul{
+    display: flex;
+}
+.topbar a{
+    text-decoration: none;
+}
+.topbar img{
+    padding-right: 3px;
+    padding-left: 8px;
+}
+.topbar .fb{
+    color: #4460a0;
+    padding-right: 8px;
+}
+.topbar .twitter{
+    color: #00aaec;
+    padding-right: 12px;
+}
+.topbar ul li{
+    position: relative;
+}
+.topbar ul li::before{
+    content: '';
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 1px;
+    background: #cccccc;
+    position: absolute;
+    top: calc((100% - 12px) / 2);
+    right: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h1 a{
+    background-image: url(../images/logo.png);
+    display: block;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header .menu{
+    display: flex;
+    justify-content: space-between;
+}
+.header .menu a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #42d3a9;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 10px;
+    display: block;
+}
+.header .menu a:hover{
+    text-decoration: underline;
+}
+.header .menu ul{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.9);
+}
+.header .menu ul li{
+    border: 1px solid #e6e4e4;
+}
+.header .menu ul li a{
+    text-align: left;
+}
+.header .menu ul li a:hover{
+    background-color: rgba(255,255,255,1);
+}
+.banner{
+    height: 346px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.banner .swiper {
+    width: 1000px;
+    height: 346px;
+}
+.banner img{
+    height: 100%;
+}
+.banner h2{
+    color:#ffffff;
+    background: #FFFFFF26;
+    font-size: 36px;
+    padding-left: 50px;
+    padding-right: 554px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    position: absolute;
+    top: 94px;
+    z-index: 2;
+}
+.course{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+.course .course-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #00000029;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.course .course-item a{
+    display: flex;
+    height: 144px;
+    align-items: center;
+}
+.course .course-item a img{
+    max-height: 100%;
+}
+.course .course-item h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.course .course-item p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    width: 260px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.difference{
+    margin: 0 auto;
+    width: 840px;
+}
+.difference h3{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.difference table{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 62px;
+}
+.difference table th, .difference table td{
+    font-size: 16px;
+    padding: 10px 18px 15px 18px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+}
+.difference table td{
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+.difference table .better{
+    color: #00a67d;
+}
+.contact{
+    height: 405px;
+    background: linear-gradient(#00644b,#009872);
+}
+.contact h3{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 32px;
+}
+.contact .form{
+    display: flex;
+    justify-content: center;
+}
+.contact .note{
+    width: 460px;
+    height: 245px;
+    margin-right: 42px;
+    margin-bottom: 30px;
+}
+.contact .contact_info{
+    display: flex;
+    flex-direction: column;
+}
+.contact label{
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+.contact .contact_info input{
+    width: 460px;
+    height: 32px;
+    margin-bottom: 16px;
+}
+.contact form .contact_info input::placeholder{
+    color: #333333;
+    padding-left: 9px;
+    font-size: 16px;
+}
+.contact form .contact_info input::-ms-input-placeholder{
+    color: #333333;
+    padding-left: 9px;
+    font-size: 16px;
+}
+.contact input, .contact textarea{
+    background: #FFFFFF;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.contact .contact_info .submit{
+    width: 70px;
+    height: 32px;
+    color: #FFFFFF;
+    background: #00cc99;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 390px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .logo a{
+    display: block;
+    background-image: url(../images/footerLogo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 36px;
+    width: 171px;
+    margin-top: 26px;
+    margin-bottom: 58px;
+    margin-left: 20px;
+}
+.footer .contact_info{
+    margin-top: 28px;
+    margin-right: 14px;
+}
+.footer .contact_info a{
+    text-decoration: none;
+    color: #e12d80;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer .contact_info a:hover{
+    text-decoration: underline;
+}
+.fixbtn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+.fixbtn img{
+    width: 50px;
+    height: 50px;
+}
